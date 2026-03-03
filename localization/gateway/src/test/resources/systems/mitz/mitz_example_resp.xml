@@ -1,0 +1,77 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
+    <s:Header>
+        <a:Action s:mustUnderstand="1">urn:ihe:iti:2009:PatientLocationQueryResponse</a:Action>
+    </s:Header>
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <PatientLocationQueryResponse xmlns="urn:ihe:iti:xcpd:2009">
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.6.6.1</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.6.6.90000017</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="90000697" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.3.164.4</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.3.164.4.1234</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00005098" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.3.164.4</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.3.164.4.1234</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00000659" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.3.2.1.7392.1.25.1</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.3.2.1.7392.1.25.1.1.4.3</SourceId>
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00014332" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.6.6.1</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.6.6.90000017</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00000659" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:2.16.840.1.113883.2.4.6.6.1</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:2.16.840.1.113883.2.4.6.6.90000017</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00079149" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+            <PatientLocationResponse>
+                <HomeCommunityId>urn:oid:1.2.840.114350.1.13.222.3.7.3.688884.100</HomeCommunityId>
+                <CorrespondingPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <RequestedPatientId root="2.16.840.1.113883.2.4.6.3" extension="900203638" assigningAuthorityName="NLMINBIZA" />
+                <SourceId>urn:oid:1.2.840.114350.1.13.222.3.7.3.688884.100</SourceId>
+                <event-code code="GGC002" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC012" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <event-code code="GGC013" codeSystem="2.16.840.1.113883.2.4.3.111.5.10.1" codeSystemName="GTZ gegevenscategorie" displayName="" />
+                <author-institution root="2.16.528.1.1007.3.3" extension="00065543" assigningAuthorityName="CIBG" />
+            </PatientLocationResponse>
+        </PatientLocationQueryResponse>
+    </s:Body>
+</s:Envelope>

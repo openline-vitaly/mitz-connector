@@ -1,0 +1,15 @@
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.3">
+    <deployment>
+        <dependencies>
+            <module name="com.parsek.vitaly.common-libs" services="import" />
+            <module name="org.apache.cxf"/>
+            <module name="org.apache.cxf.impl"/>
+            <module name="org.apache.ws.security"/>
+            <module name="org.opensaml"/>
+            <module annotations="true" meta-inf="import" name="com.parsek.vitaly" services="import"/>
+            <module meta-inf="import" name="deployment.vitaly-backend-integration-mappers-hl7v3"/>
+            <module name="org.infinispan"/>
+            <module name="jdk.unsupported" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

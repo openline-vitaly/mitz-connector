@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <wsse:Security soap:mustUnderstand="true" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <saml2:Assertion ID="_a7dc0f5d-5300-4fac-80a5-5c6d08b808c3" IssueInstant="2018-10-30T08:11:47.187Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <saml2:Issuer>xds-bridge-xua-proxy</saml2:Issuer>
+                <saml2:AttributeStatement>
+                    <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role">
+                        <saml2:AttributeValue>
+                            <Role RolNaam="Huisarts" code="01.015" codeSystem="2.16.840.1.113883.2.4.15.111" codeSystemName="RoleCodeNL" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CV"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                    <saml2:Attribute Name="urn:ihe:iti:xua:2017:subject:provider-identifier">
+                        <saml2:AttributeValue>
+                            <id assigningAuthorityName="CIBG" displayable="true" extension="123456782" root="2.16.528.1.1007.3.1" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="II"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                    <saml2:Attribute Name="urn:nl:otv:names:tc:1.0:subject:mandated">
+                        <saml2:AttributeValue>
+                            <id assigningAuthorityName="CIBG" displayable="true" extension="123456789" root="2.16.528.1.1007.3.1" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="II"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                    <saml2:Attribute Name="urn:nl:otv:names:tc:1.0:subject:provider-institution">
+                        <saml2:AttributeValue DataType="urn:hl7-org:v3#CV">
+                            <InstanceIdentifier extension="00000659" root="2.16.528.1.1007.3.3" xmlns="urn:hl7-org:v3"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                    <saml2:Attribute Name="urn:nl:otv:names:tc:1.0:subject:consulting-healthcare-facility-type-code">
+                        <saml2:AttributeValue>
+                            <InstanceIdentifier code="Z3" codeSystem="2.16.840.1.113883.2.4.15.1060" displayName="Huisartsenpraktijk" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CV"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                    <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:purposeofuse">
+                        <saml2:AttributeValue DataType="urn:hl7-org:v3#CV">
+                            <CodedValue code="TREAT" codeSystem="2.16.840.1.113883.1.11.20448" displayName="Treatment" xmlns="urn:hl7-org:v3"/>
+                        </saml2:AttributeValue>
+                    </saml2:Attribute>
+                </saml2:AttributeStatement>
+            </saml2:Assertion>
+        </wsse:Security>
+        <Action soap:mustUnderstand="true" xmlns="http://www.w3.org/2005/08/addressing">urn:ihe:iti:2009:PatientLocationQuery</Action>
+    </soap:Header>
+    <soap:Body>
+        <PatientLocationQueryRequest xmlns="urn:ihe:iti:xcpd:2009">
+            <RequestedPatientId assigningAuthorityName="NLMINBIZA" extension="900203638" root="2.16.840.1.113883.2.4.6.3"/>
+        </PatientLocationQueryRequest>
+    </soap:Body>
+</soap:Envelope>

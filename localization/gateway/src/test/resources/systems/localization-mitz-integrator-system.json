@@ -1,0 +1,86 @@
+{
+  "id": "mitz",
+  "patient_aa_query": "2.16.840.1.113883.2.4.6.3",
+  "logging": true,
+  "ssl_client_authentication": false,
+  "common_name_check_disabled": true,
+  "connect_timeout": 3000,
+  "socket_timeout": 5000,
+  "mitzUrl": "http://localhost:9280/mitz",
+  "authorization": {
+    "jndi": "java:global/ParsekStsTokenSource/ParsekXuaStsTokenSource!com.parsek.vitaly.xua.user.XuaTokenSource",
+    "logging": true,
+    "org_based_token": true,
+    "assertion_issuer": "xds-bridge-xua-proxy",
+    "token_claims": [
+      {
+        "namespace": "urn:oasis:names:tc:xacml:2.0:subject:role",
+        "type": "role",
+        "value": [
+          {
+            "code": "01.015",
+            "system": "2.16.840.1.113883.2.4.15.111",
+            "systemName": "RoleCodeNL",
+            "display": "Huisarts"
+          }
+        ]
+      },
+      {
+        "namespace": "urn:ihe:iti:xua:2017:subject:provider-identifier",
+        "type": "id",
+        "value": [
+          {
+            "root": "2.16.528.1.1007.3.1",
+            "extension": "123456782",
+            "assigningAuthorityName": "CIBG",
+            "displayable": "true"
+          }
+        ]
+      },
+      {
+        "namespace": "urn:nl:otv:names:tc:1.0:subject:mandated",
+        "type": "id",
+        "value": [
+          {
+            "root": "2.16.528.1.1007.3.1",
+            "extension": "123456789",
+            "assigningAuthorityName": "CIBG",
+            "displayable": "true"
+          }
+        ]
+      },
+      {
+        "namespace": "urn:nl:otv:names:tc:1.0:subject:provider-institution",
+        "type": "instanceIdentifier",
+        "value": [
+          {
+            "root": "2.16.528.1.1007.3.3",
+            "extension": "00000659"
+          }
+        ]
+      },
+      {
+        "namespace": "urn:nl:otv:names:tc:1.0:subject:consulting-healthcare-facility-type-code",
+        "type": "instanceIdentifier",
+        "value": [
+          {
+            "code": "Z3",
+            "system": "2.16.840.1.113883.2.4.15.1060",
+            "display": "Huisartsenpraktijk"
+          }
+        ]
+      },
+      {
+        "namespace": "urn:oasis:names:tc:xspa:1.0:subject:purposeofuse",
+        "type": "CodedValue",
+        "value": [
+          {
+            "code": "TREAT",
+            "system": "2.16.840.1.113883.1.11.20448",
+            "display": "Treatment"
+          }
+        ]
+      }
+    ]
+  }
+}

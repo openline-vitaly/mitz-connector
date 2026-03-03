@@ -1,0 +1,9 @@
+<!--
+  ~ Copyright (c) 2018 by Parsek d.o.o.
+  ~ All Rights Reserved.
+  -->
+
+<jboss-web>
+    <context-root>/test</context-root>
+    <security-domain>VitalyDomain</security-domain>
+</jboss-web>
