@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:schemas-sicom.si/BIS2_service" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:urn="urn:hl7-org:v3" xmlns:bis2="urn:schemas-sicom.si/BIS2_service">
+  <xs:element name="ProcessMessageResponse" type="bis2:ProcessMessageResponseType"/>
+  <xs:import namespace="urn:hl7-org:v3" schemaLocation="PRPA_IN201314MA01_COMMONS.xsd"/>
+  <xs:complexType name="ProcessMessageResponseType">
+    <xs:sequence>
+      <xs:element type="urn:processMessageResultType" name="ProcessMessageResult"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

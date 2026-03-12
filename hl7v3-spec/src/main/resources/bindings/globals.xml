@@ -1,0 +1,9 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+               version="3.0">
+
+    <jaxb:globalBindings generateElementProperty="false" generateMixedExtensions="true" typesafeEnumMaxMembers="512">
+        <jaxb:serializable/>
+    </jaxb:globalBindings>
+
+</jaxb:bindings>

@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    jaxb:version="3.0">
+    <jaxb:bindings schemaLocation="../schema/HL7V3/NE2008/multicacheschemas/PRPA_IN201314MA01_COMMONS.xsd">
+        <!-- Map 'dateValue' attribute to 'value' field -->
+        <jaxb:bindings node="//xs:attribute[@name='value']">
+            <jaxb:property name="birthTimeTypeValue" />
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>
