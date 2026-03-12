@@ -11,6 +11,9 @@ MITZ is the Dutch national consent registry. It allows healthcare providers to p
 
 ```
 mitz-connector/
+├── hl7v3-spec/         # Git submodule: HL7v3 classes generated from XSDs and IHE XCPD WSDL stubs
+│                       # Provides the JAX-WS service interface (RespondingGatewayPLQPortType) and
+│                       # all request/response types used in the SOAP PatientLocationQuery interaction
 ├── commons/
 │   ├── cxf/            # Apache CXF client infrastructure (SOAP, logging, SSL)
 │   └── mitz/           # MITZ-specific client factory and executor (core integration logic)
